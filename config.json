@@ -1,0 +1,12 @@
+{
+  "application": "koa-cli",
+  "sqltype": "mysql",
+  "host": "192.168.20.241",
+  "port": "3306",
+  "mysql": {
+    "database": "demo20190110",
+    "username": "root",
+    "password": "",
+    "dialect": "mysql"
+  }
+}
