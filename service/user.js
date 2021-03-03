@@ -7,8 +7,8 @@ async function GetUser (ctx) {
 async function CreateUser (ctx) {
   console.log(111, ctx.request.body)
   let user = ctx.request.body
-  const result = await ctx.model.User.create(user)
-  ctx.body = result
+  //const result = await ctx.model.User.create(user)
+  ctx.body = user
 }
 
 // async function GetPersonById (instant, ctx) {
