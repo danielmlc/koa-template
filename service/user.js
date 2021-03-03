@@ -6,8 +6,8 @@ async function GetUser (ctx) {
 
 async function CreateUser (ctx) {
   console.log(111, ctx.request.body)
-  let order = ctx.request.body
-  const result = await ctx.model.User.create(order)
+  let user = ctx.request.body
+  const result = await ctx.model.User.create(user)
   ctx.body = result
 }
 

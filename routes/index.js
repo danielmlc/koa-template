@@ -10,4 +10,5 @@ router.get('/', async (ctx, next) => {
 router.post('/order', async (ctx, next) => { console.log(1111); await orderService.CreateOrder(ctx) })
 router.get('/orderItem', async (ctx, next) => { await orderService.GetOrderItem(ctx) })
 router.get('/user', async (ctx, next) => { await userService.GetUser(ctx) })
+router.post('/user', async (ctx, next) => { await userService.CreateUser(ctx) })
 module.exports = router
