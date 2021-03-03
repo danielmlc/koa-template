@@ -1,7 +1,8 @@
 
 async function GetUser (ctx) {
-  const result = await ctx.model.User.findAll()
-  ctx.body = result
+  //const result = await ctx.model.User.findAll()
+  console.log(111, ctx.request.query)
+  ctx.body = ctx.request.query
 }
 
 async function CreateUser (ctx) {
